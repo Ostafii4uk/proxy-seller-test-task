@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Users:</h1>
-      {users.map(user => <UserCard user={user} />)}
+      {users.map(user => <UserCard user={user} key={user.id} />)}
     </main>
   )
 }

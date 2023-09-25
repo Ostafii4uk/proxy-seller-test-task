@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const UserCard: React.FC<{ user: User }> = ({ user }) =>  {
   return (
-    <div className={styles.user} key={user.id} >
+    <div className={styles.user}>
       <h3>Name: { user.name }</h3>
       <p>Email: <a href={`mailto: ${user.email}`}>{ user.email }</a></p>
       <p>City: <a href={`https://www.google.com.ua/maps/search/${user.address.city}`} target='_blank'>{ user.address.city }</a></p>
