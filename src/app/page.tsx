@@ -1,21 +1,14 @@
 import styles from './page.module.css'
 import getUsers from '@/services/users'
 import User from '@/types/user.types'
+import UserCard from '@/components/userCard/UserCard'
  
 export default async function Home() {
   const users: User[] = await getUsers()
   return (
     <main className={styles.main}>
-      <h1>Users</h1>
-      <ul>
-        {users.map(user => {
-          return (
-            <li key={user.id}>
-              <h3>User name: { user.name }</h3>
-            </li>
-          )
-        })}
-      </ul>
+      <h1 className={styles.title}>Users:</h1>
+      {users.map(user => <UserCard user={user} />)}
     </main>
   )
 }
