@@ -1,4 +1,4 @@
-export default interface Comments {
+export default interface Comment {
   postId: number,
   id: number,
   name: string,

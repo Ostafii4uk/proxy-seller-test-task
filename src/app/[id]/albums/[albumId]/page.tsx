@@ -12,7 +12,7 @@ const UserAlbum: React.FC<{params: { albumId: number, id: number }}> = async ({ 
 
   return (
     <div className={styles.album}>
-      <h2 className={styles.title}>{ album[0].title }</h2>
+      <h1 className={styles.title}>{ album[0].title }</h1>
       <Link className={styles.link} href={`/${params.id}/albums`}>Back to albums</Link>
       <div className={styles.photos}>
         {photos.map(photo => <PhotoCard photo={photo} key={photo.id} />)}
