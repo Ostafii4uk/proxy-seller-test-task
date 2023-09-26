@@ -5,8 +5,3 @@
   align-items: center;
   gap: 20px;
 }
-
-.title {
-  border-bottom: 1px solid;
-  border-color: rgb(48, 54, 61);
-}
