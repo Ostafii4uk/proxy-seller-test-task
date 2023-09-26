@@ -1,0 +1,16 @@
+.photo {
+  max-width: 610px;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-color: rgba(240, 246, 252, 0.1);
+  border-radius: 4px;
+  background-color: rgb(33, 38, 45);
+}
+
+.title {
+  padding: 0.25rem 0;
+  text-align: center;
+}

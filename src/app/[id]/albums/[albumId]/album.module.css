@@ -1,0 +1,37 @@
+.album {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  border-bottom: 1px solid;
+  border-color: rgb(48, 54, 61);
+  text-transform: capitalize;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 75px;
+  padding: 0.25rem;
+  background-color: rgb(33, 38, 45);
+  border: 1px solid;
+  border-color: rgba(240, 246, 252, 0.1);
+  border-radius: 4px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
