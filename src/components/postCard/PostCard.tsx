@@ -1,12 +1,13 @@
 import styles from './postCard.module.css'
 import Post from '@/types/post.types'
+import Link from 'next/link'
 
-const PostCard: React.FC<{ post: Post }> = ({ post }) =>  {
+const PostCard: React.FC<{ post: Post, userId: number }> = ({ post, userId }) =>  {
   return (
-    <div className={styles.post}>
-      <h3>Title: { post.title }</h3>
+    <Link href={`/${userId}/posts/${post.id}`} className={styles.post}>
+      <h3 className={styles.title}>{ post.title }</h3>
       <p>{ post.body }</p>
-    </div>
+    </Link>
   )
 }
 

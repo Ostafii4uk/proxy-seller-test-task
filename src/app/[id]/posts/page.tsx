@@ -10,7 +10,7 @@ const UserPosts: React.FC<{params: { id: number }}> = async ({ params }) => {
     <div className={styles.posts}>
       <Link className={styles.link} href={'/'}>Back to users</Link>
       <h1 className={styles.title}>Posts:</h1>
-      {posts.map(post => <PostCard post={post} key={post.id} />)}
+      {posts.map(post => <PostCard post={post} key={post.id} userId={params.id} />)}
     </div>
   )
 }
